@@ -1,0 +1,23 @@
+
+
+<div class="container-fluid bg-light text-dark p-3">
+    <div class="container bg-light p-3">
+        <h1 class="display-6"><%= render @friend %></h1>
+        
+        <p>Go to My Website</p>
+        <a href="#" class="btn btn-primary">link</a>
+    </div>
+</div>
+<br/>
+
+<div>
+  <%= link_to "Edit this friend", edit_friend_path(@friend), class:"btn btn-secondary" %> 
+
+  <%= link_to "Back to friends", friends_path, class:"btn btn-secondary" %>
+</div>  
+
+<br/>
+<div>
+   <%= button_to "Delete", @friend, method: :delete, class:"btn btn-danger"  %>
+</div>
+<br/>
